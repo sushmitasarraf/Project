@@ -1,0 +1,9 @@
+<template>
+    <lightning-layout>
+    <template for:each={infos} for:item="info">
+        <lightning-layout-item padding="around-small" key={info.Id} size="4">
+            <c-user-information info={info}></c-user-information>
+        </lightning-layout-item>
+    </template>
+    </lightning-layout>
+</template>

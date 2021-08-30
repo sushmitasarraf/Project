@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="User Informatio" icon-name="action:user">
+        <image class="slds-m-top_small" src={info.imageurl}></image>
+        <p class={info.statusbadge}>UserId: {info.Id}</p>
+            <div class={info.statusbadge}>
+                <p><b>User Name</b></p>
+                {name}
+            </div>
+        <lightning-button variant="Brand" label={info.status} title="Primary action" onclick={handleClick} class={info.statusbadge}></lightning-button>
+    </lightning-card>
+</template> 
